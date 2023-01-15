@@ -3,8 +3,9 @@
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Academic # Website name
-baseURL: 'https://example.com/' # Website URL
+title: Aurélien Sallin # Website name
+baseurl: 'https://asallin.github.io/' # Website URL
+copyright: '© {2022} Aurelien Sallin' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
@@ -73,3 +74,9 @@ sitemap:
   _merge: deep
 minify:
   _merge: deep
+googleAnalytics: "UA-211995168-1"
+security:
+  funcs:
+    getenv:
+      - ^HUGO_
+      - ^WC_

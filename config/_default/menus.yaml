@@ -7,21 +7,16 @@ main:
   - name: Home
     url: '#about'
     weight: 10
-  - name: Posts
-    url: '#posts'
-    weight: 20
-  - name: Projects
-    url: '#projects'
-    weight: 30
-  - name: Talks
-    url: '#talks'
-    weight: 40
-  - name: Publications
+  - name: Job-Market Paper
     url: '#featured'
+    weight: 20
+  - name: Publications and Research
+    url: '#publications'
+    weight: 30
+  - name: CV
+    url: 'https://drive.google.com/file/d/1bqHXI7OU441VKd0SwDyGMxA4ikkjWQvS/view?usp=sharing'
     weight: 50
-  - name: Contact
-    url: '#contact'
-    weight: 60
+
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.

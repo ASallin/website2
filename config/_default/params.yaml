@@ -9,7 +9,7 @@ appearance:
   theme_day: minimal
   theme_night: minimal
   font: minimal
-  font_size: L
+  font_size: m
 
 # SEO
 
@@ -17,15 +17,26 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo academic resume theme powered by Wowchemy website builder.'
-    twitter: 'wowchemy'
+    org_name: 'Aurelien Sallin'
+    description: 'Economist, Econometrics, Data Scientist, PhD'
+    twitter: 'AurelienSallin'
   analytics:
-    google_analytics: ''
+    google_analytics: 'UA-211995168-1'
     baidu_tongji: ''
   verification:
-    google: ''
+    google: 'H8zcSepCTok1o3kUe9ZNNok_BWAVBljzqBEaE-11Zos'
     baidu: ''
+marketing:
+  google_analytics: "UA-211995168-1"
+  google_tag_manager: 'UA-211995168-1'
+  google_site_verification: "H8zcSepCTok1o3kUe9ZNNok_BWAVBljzqBEaE-11Zos"
+  baidu_site_verification: ''
+  baidu_tongji: ''
+
+# Contact (edit or remove options as required)
+email: aurelien.sallin@protonmail.com
+phone: +41 79 954 84 50
+
 
 # Site header
 
@@ -43,7 +54,7 @@ header:
 
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {2022} Aurélien Sallin.'
     license:
       enable: true
       allow_derivatives: false
