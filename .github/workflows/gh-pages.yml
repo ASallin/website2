@@ -15,27 +15,14 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Hugo Deploy GitHub Pages
-        uses: asallin/website2@master
-        env:
-          HUGO_VERSION: 0.102.3
-          TARGET_REPO: asallin/asallin.github.io
-          TOKEN: ${{ secrets.TOKEN }}
-          CNAME: www.jameswright.xyz
-      
-      
-      ame: Setup Hugo
-        uses: asallin/website2@master
-        with:
-          hugo-version: 'latest'
-          # extended: true
-
-      - name: Build
-        run: hugo --minify
-
       - name: Deploy
-        uses: asallin/website2actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        uses: asallin/website2@master
+        # If you're changing the branch from main, 
+        # also change the `main` in `refs/heads/main` 
+        # below accordingly.
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
+      
+   
