@@ -1,28 +1,24 @@
-name: github pages
+name: Build and Deploy
 
 on:
   push:
     branches:
-      - main  # Set a branch that will trigger a deployment
-  pull_request:
+      - master
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+  build:
 
-      - name: Deploy
-        uses: asallin/website2@master
-        # If you're changing the branch from main, 
-        # also change the `main` in `refs/heads/main` 
-        # below accordingly.
-        if: ${{ github.ref == 'refs/heads/main' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-      
-   
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout master
+      uses: actions/checkout@v1
+      with:
+        submodules: true
+
+    - name: Hugo Deploy GitHub Pages
+      uses: asallin/website2@master
+      env:
+        HUGO_VERSION: 0.102.3
+        TARGET_REPO: asallin/asallin.github.io
+        TOKEN: ${{ secrets.TOKENPAT }}
