@@ -1,6 +1,6 @@
 ---
 # Display name
-title: Aurélien Sallin
+title: Aurélien Sallin, PhD
 
 # Is this the primary user of the site?
 superuser: true

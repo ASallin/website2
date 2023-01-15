@@ -18,7 +18,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: 'Aurelien Sallin'
-    description: 'Economist, Econometrics, Data Scientist, PhD'
+    description: 'Economist, Econometrics, Data Scientist, PhD, Health Insurance, Switzerland'
     twitter: 'AurelienSallin'
   analytics:
     google_analytics: 'UA-211995168-1'
@@ -54,9 +54,9 @@ header:
 
 footer:
   copyright:
-    notice: '© {2022} Aurélien Sallin.'
+    notice: '© 2023 Aurélien Sallin.'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
       share_alike: true
       allow_commercial: false
